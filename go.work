@@ -1,0 +1,6 @@
+go 1.20
+
+use (
+	./starting-go-language/chapter2-1
+	./starting-go-language/chapter2-2
+)
