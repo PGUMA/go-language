@@ -17,3 +17,7 @@
 
 - 最小限の言語仕様
 - コンパイル速度
+
+## 参考記事
+
+[Go のなぜ問答](https://zenn.dev/nobonobo/articles/9a9f12b27bfde9) ⭐︎⭐︎⭐︎⭐︎⭐︎
