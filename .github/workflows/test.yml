@@ -11,9 +11,9 @@ jobs:
   test:
     strategy:
       matrix:
-        os: [mac-os-latest, ubuntu-latest]
         go: ["1.19", "1.20"]
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
 
     steps:
       - uses: actions/checkout@v3
