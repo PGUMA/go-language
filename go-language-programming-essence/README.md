@@ -20,3 +20,8 @@ encoding/base64  => OK
 go clean -cache
 go clean -modcache
 ```
+
+## Go とクラウドの相性
+
+- シングルバイナリでデプロイが容易
+- クラウドのコアスケールに応じてアプリケーションもスケールさせやすい
