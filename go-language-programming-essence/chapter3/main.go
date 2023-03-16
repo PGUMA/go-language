@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"errors"
 	"fmt"
 )
@@ -46,8 +47,19 @@ func main () {
 	case fruits == APPLE:
 	default:
 	}
+
+	// 構造体
+	fmt.Printf("%v\n", User {"test", 1})
+	userJsonByte, _ := json.Marshal(User {"test", 1})
+	// 非公開フィールドはjson化されない点に注意
+	fmt.Printf("%v\n", string(userJsonByte))
 }
 
 func userName() (string, error) {
 	return "", errors.New("Oops")
+}
+
+type User struct {
+	Name string
+	sex int
 }
