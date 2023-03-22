@@ -63,3 +63,14 @@ type User struct {
 	Name string
 	sex int
 }
+
+
+var _ I = (*foo)(nil)
+
+type I interface {
+	doSomething()
+}
+
+type foo struct {}
+
+func (f *foo) doSomething() {}
